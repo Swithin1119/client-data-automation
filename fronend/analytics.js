@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = "https://clientflow-backend-py6m.onrender.com";
 
 let trendChartInstance = null;
 let regionChartInstance = null;
