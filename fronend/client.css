@@ -1,0 +1,991 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family:
+
+        Inter,
+
+        -apple-system,
+
+        BlinkMacSystemFont,
+
+        "Segoe UI",
+
+        sans-serif;
+
+    background: #f5f7fb;
+
+    color: #101828;
+
+}
+
+
+.portal-layout {
+
+    min-height: 100vh;
+
+    display: flex;
+
+}
+
+
+/* ==========================================
+   BRAND PANEL
+========================================== */
+
+.brand-panel {
+
+    width: 38%;
+
+    min-height: 100vh;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            #0b1220,
+
+            #111c31
+
+        );
+
+    color: white;
+
+    padding: 48px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.brand-panel::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(
+
+        255,
+
+        255,
+
+        255,
+
+        0.06
+
+    );
+
+    right: -220px;
+
+    bottom: -150px;
+
+}
+
+
+.brand-panel::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(
+
+        255,
+
+        255,
+
+        255,
+
+        0.05
+
+    );
+
+    right: -150px;
+
+    bottom: -50px;
+
+}
+
+
+.brand-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.brand-logo {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 14px;
+
+    background: #2563eb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    margin-bottom: 20px;
+
+}
+
+
+.brand-content h1 {
+
+    font-size: 24px;
+
+    letter-spacing: -0.8px;
+
+}
+
+
+.brand-subtitle {
+
+    color: #98a2b3;
+
+    font-size: 13px;
+
+    margin-top: 7px;
+
+}
+
+
+.brand-divider {
+
+    width: 50px;
+
+    height: 3px;
+
+    background: #2563eb;
+
+    margin: 60px 0 32px;
+
+    border-radius: 4px;
+
+}
+
+
+.brand-message h2 {
+
+    font-size: 42px;
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+}
+
+
+.brand-message p {
+
+    color: #98a2b3;
+
+    max-width: 340px;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+
+    margin-top: 24px;
+
+}
+
+
+.security-info {
+
+    margin-top: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background: rgba(
+
+        255,
+
+        255,
+
+        255,
+
+        0.05
+
+    );
+
+    border: 1px solid rgba(
+
+        255,
+
+        255,
+
+        255,
+
+        0.08
+
+    );
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    max-width: 330px;
+
+}
+
+
+.security-icon {
+
+    width: 30px;
+
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: rgba(
+
+        18,
+
+        183,
+
+        106,
+
+        0.15
+
+    );
+
+    color: #32d583;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 700;
+
+}
+
+
+.security-info strong {
+
+    display: block;
+
+    font-size: 12px;
+
+}
+
+
+.security-info small {
+
+    display: block;
+
+    color: #98a2b3;
+
+    font-size: 10px;
+
+    margin-top: 4px;
+
+}
+
+
+.brand-footer {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: #667085;
+
+    font-size: 11px;
+
+}
+
+
+/* ==========================================
+   FORM PANEL
+========================================== */
+
+.form-panel {
+
+    flex: 1;
+
+    min-height: 100vh;
+
+    background: #f8fafc;
+
+    overflow-y: auto;
+
+}
+
+
+.form-container {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 48px 55px 60px;
+
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.form-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 38px;
+
+}
+
+
+.eyebrow {
+
+    color: #2563eb;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.form-header h2 {
+
+    font-size: 30px;
+
+    letter-spacing: -1px;
+
+}
+
+
+.description {
+
+    color: #667085;
+
+    font-size: 13px;
+
+    margin-top: 8px;
+
+}
+
+
+.portal-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 12px;
+
+    border: 1px solid #d1fadf;
+
+    background: #ecfdf3;
+
+    color: #027a48;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+.status-dot {
+
+    width: 7px;
+
+    height: 7px;
+
+    background: #12b76a;
+
+    border-radius: 50%;
+
+    box-shadow:
+
+        0 0 0 4px
+
+        rgba(
+
+            18,
+
+            183,
+
+            106,
+
+            0.12
+
+        );
+
+}
+
+
+/* ==========================================
+   FORM SECTION
+========================================== */
+
+.form-section {
+
+    background: white;
+
+    border: 1px solid #eaecf0;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    margin-bottom: 18px;
+
+    box-shadow:
+
+        0 2px 5px
+
+        rgba(
+
+            16,
+
+            24,
+
+            40,
+
+            0.03
+
+        );
+
+}
+
+
+.section-title {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.section-number {
+
+    width: 30px;
+
+    height: 30px;
+
+    border-radius: 8px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+}
+
+
+.section-title h3 {
+
+    font-size: 14px;
+
+    color: #101828;
+
+}
+
+
+.section-title p {
+
+    font-size: 11px;
+
+    color: #98a2b3;
+
+    margin-top: 4px;
+
+}
+
+
+/* ==========================================
+   FORM GRID
+========================================== */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(
+
+            2,
+
+            minmax(
+
+                0,
+
+                1fr
+
+            )
+
+        );
+
+    gap: 20px;
+
+}
+
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.full-width {
+
+    grid-column: span 2;
+
+}
+
+
+.form-group label {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #344054;
+
+    margin-bottom: 8px;
+
+}
+
+
+.form-group label span {
+
+    color: #d92d20;
+
+}
+
+
+.form-group input {
+
+    width: 100%;
+
+    height: 44px;
+
+    border: 1px solid #d0d5dd;
+
+    border-radius: 8px;
+
+    padding: 0 13px;
+
+    outline: none;
+
+    color: #101828;
+
+    font-size: 13px;
+
+    background: white;
+
+    transition: 0.2s;
+
+}
+
+
+.form-group input::placeholder {
+
+    color: #98a2b3;
+
+}
+
+
+.form-group input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+
+        0 0 0 3px
+
+        rgba(
+
+            37,
+
+            99,
+
+            235,
+
+            0.1
+
+        );
+
+}
+
+
+.form-group small {
+
+    color: #98a2b3;
+
+    font-size: 10px;
+
+    margin-top: 6px;
+
+}
+
+
+/* ==========================================
+   SUBMIT AREA
+========================================== */
+
+.submit-area {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-top: 25px;
+
+}
+
+
+.submit-note {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    max-width: 300px;
+
+}
+
+
+.submit-note span {
+
+    color: #12b76a;
+
+    font-weight: 800;
+
+}
+
+
+.submit-note p {
+
+    color: #667085;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+}
+
+
+.submit-button {
+
+    height: 48px;
+
+    padding: 0 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    box-shadow:
+
+        0 5px 12px
+
+        rgba(
+
+            37,
+
+            99,
+
+            235,
+
+            0.2
+
+        );
+
+    transition: 0.2s;
+
+}
+
+
+.submit-button:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+
+}
+
+
+.button-arrow {
+
+    font-size: 18px;
+
+}
+
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+.message {
+
+    display: none;
+
+    margin-top: 18px;
+
+    padding: 13px 15px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.message.success {
+
+    display: block;
+
+    color: #027a48;
+
+    background: #ecfdf3;
+
+    border: 1px solid #abefc6;
+
+}
+
+
+.message.error {
+
+    display: block;
+
+    color: #b42318;
+
+    background: #fef3f2;
+
+    border: 1px solid #fecdca;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1000px) {
+
+
+    .brand-panel {
+
+        width: 34%;
+
+        padding: 35px;
+
+    }
+
+
+    .brand-message h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .form-container {
+
+        padding: 35px;
+
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+
+    .portal-layout {
+
+        display: block;
+
+    }
+
+
+    .brand-panel {
+
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 30px;
+
+    }
+
+
+    .brand-divider,
+
+    .brand-message,
+
+    .security-info {
+
+        display: none;
+
+    }
+
+
+    .brand-footer {
+
+        margin-top: 30px;
+
+    }
+
+
+    .form-container {
+
+        padding: 30px 20px 45px;
+
+    }
+
+
+}
+
+
+@media (max-width: 550px) {
+
+
+    .form-header {
+
+        flex-direction: column;
+
+        gap: 18px;
+
+    }
+
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .full-width {
+
+        grid-column: span 1;
+
+    }
+
+
+    .submit-area {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .submit-button {
+
+        justify-content: center;
+
+    }
+
+}

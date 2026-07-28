@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ClientFlow | Client Registration</title>
+
+    <link rel="stylesheet" href="client.css">
+
+</head>
+
+<body>
+
+    <div class="portal-layout">
+
+        <!-- LEFT BRAND PANEL -->
+
+        <section class="brand-panel">
+
+            <div class="brand-content">
+
+                <div class="brand-logo">
+                    CF
+                </div>
+
+                <h1>
+                    ClientFlow
+                </h1>
+
+                <p class="brand-subtitle">
+                    Secure client data management platform
+                </p>
+
+                <div class="brand-divider"></div>
+
+                <div class="brand-message">
+
+                    <h2>
+                        Connect.
+                        <br>
+                        Capture.
+                        <br>
+                        Manage.
+                    </h2>
+
+                    <p>
+                        Submit your client information securely
+                        and keep your records synchronized
+                        automatically.
+                    </p>
+
+                </div>
+
+                <div class="security-info">
+
+                    <span class="security-icon">
+                        ✓
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Secure Data Submission
+                        </strong>
+
+                        <small>
+                            Your information is processed securely
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="brand-footer">
+                © 2026 ClientFlow Enterprise
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT FORM PANEL -->
+
+        <main class="form-panel">
+
+            <div class="form-container">
+
+
+                <!-- HEADER -->
+
+                <div class="form-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            CLIENT PORTAL
+                        </p>
+
+                        <h2>
+                            Register Client
+                        </h2>
+
+                        <p class="description">
+                            Enter the client details below to create
+                            a new record.
+                        </p>
+
+                    </div>
+
+                    <div class="portal-status">
+
+                        <span class="status-dot"></span>
+
+                        Portal Online
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM -->
+
+                <form id="clientForm">
+
+
+                    <!-- SECTION 1: CLIENT IDENTITY -->
+
+                    <div class="form-section">
+
+                        <div class="section-title">
+
+                            <span class="section-number">
+                                01
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Client Identity
+                                </h3>
+
+                                <p>
+                                    Basic identification information
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <!-- PORTAL ID -->
+
+                            <div class="form-group full-width">
+
+                                <label for="portal_id">
+
+                                    Portal ID
+
+                                    <span>*</span>
+
+                                </label>
+
+
+                                <input
+
+                                    type="text"
+
+                                    id="portal_id"
+
+                                    placeholder="e.g. P_10007"
+
+                                    required
+
+                                >
+
+
+                                <small>
+
+                                    Letters, numbers and underscore allowed.
+                                    Must be unique.
+
+                                </small>
+
+                            </div>
+
+
+                            <!-- FIRST NAME -->
+
+                            <div class="form-group">
+
+                                <label for="first_name">
+
+                                    First Name
+
+                                    <span>*</span>
+
+                                </label>
+
+
+                                <input
+
+                                    type="text"
+
+                                    id="first_name"
+
+                                    placeholder="Enter first name"
+
+                                    required
+
+                                >
+
+                            </div>
+
+
+                            <!-- LAST NAME -->
+
+                            <div class="form-group">
+
+                                <label for="last_name">
+
+                                    Last Name
+
+                                    <span>*</span>
+
+                                </label>
+
+
+                                <input
+
+                                    type="text"
+
+                                    id="last_name"
+
+                                    placeholder="Enter last name"
+
+                                    required
+
+                                >
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SECTION 2: LOCATION DETAILS -->
+
+                    <div class="form-section">
+
+
+                        <div class="section-title">
+
+                            <span class="section-number">
+                                02
+                            </span>
+
+
+                            <div>
+
+                                <h3>
+                                    Location Details
+                                </h3>
+
+
+                                <p>
+                                    Add the client's address information
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <!-- ADDRESS -->
+
+                            <div class="form-group full-width">
+
+                                <label for="address">
+
+                                    Address
+
+                                    <span>*</span>
+
+                                </label>
+
+
+                                <input
+
+                                    type="text"
+
+                                    id="address"
+
+                                    placeholder="Enter complete address"
+
+                                    required
+
+                                >
+
+                            </div>
+
+
+                            <!-- STREET -->
+
+                            <div class="form-group">
+
+                                <label for="street">
+
+                                    Street
+
+                                    <span>*</span>
+
+                                </label>
+
+
+                                <input
+
+                                    type="text"
+
+                                    id="street"
+
+                                    placeholder="e.g. 12/4 Anna Nagar"
+
+                                    required
+
+                                >
+
+
+                                <small>
+
+                                    Letters, numbers, spaces and / allowed.
+
+                                </small>
+
+                            </div>
+
+
+                            <!-- REGION -->
+
+                            <div class="form-group">
+
+                                <label for="region">
+
+                                    Region / Country
+
+                                    <span>*</span>
+
+                                </label>
+
+
+                                <input
+
+                                    type="text"
+
+                                    id="region"
+
+                                    placeholder="e.g. India"
+
+                                    required
+
+                                >
+
+                            </div>
+
+
+                            <!-- POSTAL CODE -->
+
+                            <div class="form-group">
+
+                                <label for="postal_code">
+
+                                    Postal Code
+
+                                    <span>*</span>
+
+                                </label>
+
+
+                                <input
+
+                                    type="text"
+
+                                    id="postal_code"
+
+                                    placeholder="Enter 6-digit postal code"
+
+                                    maxlength="6"
+
+                                    inputmode="numeric"
+
+                                    required
+
+                                >
+
+
+                                <small>
+
+                                    Must contain exactly 6 numbers.
+
+                                </small>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SECTION 3: CONTACT INFORMATION -->
+
+                    <div class="form-section">
+
+
+                        <div class="section-title">
+
+                            <span class="section-number">
+                                03
+                            </span>
+
+
+                            <div>
+
+                                <h3>
+                                    Contact Information
+                                </h3>
+
+
+                                <p>
+                                    Provide a primary contact number
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <!-- PHONE NUMBER -->
+
+                            <div class="form-group full-width">
+
+                                <label for="phone_number">
+
+                                    Phone Number
+
+                                    <span>*</span>
+
+                                </label>
+
+
+                                <input
+
+                                    type="tel"
+
+                                    id="phone_number"
+
+                                    placeholder="9876543210"
+
+                                    maxlength="10"
+
+                                    inputmode="numeric"
+
+                                    required
+
+                                >
+
+
+                                <small>
+
+                                    Must contain exactly 10 numbers.
+
+                                </small>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SUBMIT AREA -->
+
+                    <div class="submit-area">
+
+
+                        <div class="submit-note">
+
+                            <span>
+                                ✓
+                            </span>
+
+
+                            <p>
+
+                                All information will be securely
+
+                                synchronized with the client database.
+
+                            </p>
+
+                        </div>
+
+
+                        <button
+
+                            type="submit"
+
+                            class="submit-button"
+
+                        >
+
+                            <span>
+
+                                Submit Client Details
+
+                            </span>
+
+
+                            <span class="button-arrow">
+
+                                →
+
+                            </span>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div
+
+                        id="message"
+
+                        class="message"
+
+                    >
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
