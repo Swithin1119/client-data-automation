@@ -28,6 +28,39 @@ function showMessage(message, type) {
 
 
 // =====================================================
+// AUTO-DOWNLOAD EXCEL FILE
+// =====================================================
+
+async function downloadLatestExcel() {
+
+    try {
+
+        const response = await fetch(`${API_BASE_URL}/download-excel`);
+
+        if (!response.ok) {
+            throw new Error("Could not fetch Excel file");
+        }
+
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "clients.xlsx";
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        window.URL.revokeObjectURL(url);
+
+    } catch (error) {
+        console.error("Auto-download failed:", error);
+    }
+}
+
+
+// =====================================================
 // FORM SUBMIT
 // =====================================================
 
@@ -135,6 +168,12 @@ if (clientForm) {
             showMessage(`${result.message} at ${result.created_at}`, "success");
 
             clientForm.reset();
+
+            // -----------------------------------------
+            // AUTO-DOWNLOAD UPDATED EXCEL FILE TO PC
+            // -----------------------------------------
+
+            downloadLatestExcel();
 
         } catch (error) {
             console.error("Submit Error:", error);
