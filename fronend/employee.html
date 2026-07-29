@@ -19,6 +19,25 @@
     href="./employee.css"
 >
 
+<style>
+    .autosave-button {
+        width: auto !important;
+        font-size: 12px !important;
+        font-weight: 600;
+        padding: 8px 12px;
+        border: 1px solid #d0d5dd;
+        border-radius: 7px;
+        background: white;
+        color: #344054;
+    }
+
+    .autosave-button.is-on {
+        background: #ecfdf3;
+        border-color: #12b76a;
+        color: #027a48;
+    }
+</style>
+
 </head>
 
 <body>
@@ -206,6 +225,20 @@
                     Live Sync
 
                 </div>
+
+
+                <!-- LOCAL AUTO-SAVE -->
+
+                <button
+                    type="button"
+                    class="icon-button autosave-button"
+                    id="autoSaveButton"
+                    title="Auto-save Excel to a folder on this PC"
+                >
+
+                    📁 Enable Auto-Save
+
+                </button>
 
 
                 <!-- REFRESH BUTTON -->
